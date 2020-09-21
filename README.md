@@ -1,3 +1,3 @@
-# Medallero API
+# AWARDS API
 
-Medallero API written in Nest.js
+Awards API written in Nest.js
