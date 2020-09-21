@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "username": "postgres",
+  "password": "my_password",
+  "host": "localhost",
+  "port": "5555",
+  "database": "medallero",
+  "entities": ["src/**/**/*.entity{.ts,.js}"],
+  "migrations": ["src/database/migrations/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "src/database/migrations"
+  }
+}
