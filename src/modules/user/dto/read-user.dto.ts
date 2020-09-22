@@ -1,5 +1,6 @@
-import { Exclude, Expose } from 'class-transformer';
-import { IsEmail, IsNumber, IsString } from 'class-validator';
+import { Exclude, Expose } from "class-transformer";
+import { IsEmail, IsNumber, IsString } from "class-validator";
+import { Team } from "../../../shared/team.enum";
 
 @Exclude()
 export class ReadUserDto {
@@ -18,6 +19,10 @@ export class ReadUserDto {
   @Expose()
   @IsString()
   readonly lastname: string;
+
+  @Expose()
+  @IsString()
+  readonly team: Team;
 
   @Expose()
   @IsString()

@@ -2,19 +2,19 @@ import {
   BadRequestException,
   Injectable,
   NotFoundException,
-} from '@nestjs/common';
-import { plainToClass } from 'class-transformer';
-import { ReadUserDto } from './dto';
-import { Status } from '../../shared/status.enum';
-import { User } from './user.entity';
-import { UserRepository } from './user.repository';
+} from "@nestjs/common";
+import { plainToClass } from "class-transformer";
+import { ReadUserDto } from "./dto";
+import { Status } from "../../shared/status.enum";
+import { User } from "./user.entity";
+import { UserRepository } from "./user.repository";
 
 @Injectable()
 export class UserService {
   constructor(private readonly _userRepository: UserRepository) {}
   async get(id: number): Promise<ReadUserDto> {
     if (!id) {
-      throw new BadRequestException('id must be sent');
+      throw new BadRequestException("id must be sent");
     }
 
     const user: User = await this._userRepository.findOne(id, {
@@ -40,11 +40,12 @@ export class UserService {
       where: { status: Status.ACTIVE },
     });
     if (!foundUser) {
-      throw new NotFoundException('user does not exists');
+      throw new NotFoundException("user does not exists");
     }
     foundUser.firstname = user.firstname;
     foundUser.lastname = user.lastname;
     foundUser.dateborn = user.dateborn;
+    foundUser.team = user.team;
 
     const updatedUser = await this._userRepository.save(foundUser);
     return plainToClass(ReadUserDto, updatedUser);
@@ -54,7 +55,7 @@ export class UserService {
       where: { status: Status.ACTIVE },
     });
     if (!userExists) {
-      throw new BadRequestException('id must be sent');
+      throw new BadRequestException("id must be sent");
     }
     await this._userRepository.update(id, { status: Status.INACTIVE });
   }
