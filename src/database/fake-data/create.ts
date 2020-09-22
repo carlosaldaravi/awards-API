@@ -30,6 +30,20 @@ export const setDefaultValues = async () => {
         .into("users")
         .values(users_DB_DATA)
         .execute();
+      const user1 = await User.findOne(1);
+      const user2 = await User.findOne(2);
+      const award1 = await Award.findOne(1);
+      const award2 = await Award.findOne(2);
+      logger.log(`Adding awards to user 1...`);
+      await User.createQueryBuilder()
+        .relation(User, "awards")
+        .of(user1)
+        .add([award1, award2]);
+      logger.log(`Adding awards to user 2...`);
+      await User.createQueryBuilder()
+        .relation(User, "awards")
+        .of(user2)
+        .add([award1]);
     }
   } catch (error) {
     console.log("Error setting default values", error);
