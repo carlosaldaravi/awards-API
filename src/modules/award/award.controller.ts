@@ -8,19 +8,19 @@ import {
   Patch,
   Post,
   UseGuards,
-} from '@nestjs/common';
-import { AuthGuard } from '@nestjs/passport';
-import { CreateAwardDto, ReadAwardDto } from './dto';
-import { Award } from './award.entity';
-import { AwardService } from './award.service';
+} from "@nestjs/common";
+// import { AuthGuard, PassportModule } from "@nestjs/passport";
+import { CreateAwardDto, ReadAwardDto } from "./dto";
+import { Award } from "./award.entity";
+import { AwardService } from "./award.service";
 
-@Controller('awards')
+@Controller("awards")
 export class AwardController {
   constructor(private _awardService: AwardService) {}
 
-  @UseGuards(AuthGuard())
-  @Get(':id')
-  getAward(@Param('id', ParseIntPipe) id: number): Promise<ReadAwardDto> {
+  // @UseGuards(AuthGuard())
+  @Get(":id")
+  getAward(@Param("id", ParseIntPipe) id: number): Promise<ReadAwardDto> {
     return this._awardService.get(id);
   }
 
@@ -37,16 +37,16 @@ export class AwardController {
     return this._awardService.create(award);
   }
 
-  @Patch(':id')
+  @Patch(":id")
   updateAward(
-    @Param('id', ParseIntPipe) id: number,
-    @Body() award: Award,
+    @Param("id", ParseIntPipe) id: number,
+    @Body() award: Award
   ): Promise<ReadAwardDto> {
     return this._awardService.update(id, award);
   }
 
-  @Delete(':id')
-  deleteAward(@Param('id', ParseIntPipe) id: number): Promise<void> {
+  @Delete(":id")
+  deleteAward(@Param("id", ParseIntPipe) id: number): Promise<void> {
     return this._awardService.delete(id);
   }
 }
