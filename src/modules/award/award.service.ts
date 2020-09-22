@@ -2,19 +2,19 @@ import {
   BadRequestException,
   Injectable,
   NotFoundException,
-} from '@nestjs/common';
-import { plainToClass } from 'class-transformer';
-import { CreateAwardDto, ReadAwardDto } from './dto';
-import { Status } from '../../shared/status.enum';
-import { Award } from './award.entity';
-import { AwardRepository } from './award.repository';
+} from "@nestjs/common";
+import { plainToClass } from "class-transformer";
+import { CreateAwardDto, ReadAwardDto } from "./dto";
+import { Status } from "../../shared/status.enum";
+import { Award } from "./award.entity";
+import { AwardRepository } from "./award.repository";
 
 @Injectable()
 export class AwardService {
   constructor(private readonly _awardRepository: AwardRepository) {}
   async get(id: number): Promise<ReadAwardDto> {
     if (!id) {
-      throw new BadRequestException('id must be sent');
+      throw new BadRequestException("id must be sent");
     }
 
     const award: Award = await this._awardRepository.findOne(id, {
@@ -47,6 +47,9 @@ export class AwardService {
         name: award.name,
         description: award.description,
         points: award.points,
+        type: award.type,
+        subtype: award.subtype,
+        order: award.order,
       });
       return plainToClass(ReadAwardDto, savedAward);
     }
@@ -57,7 +60,7 @@ export class AwardService {
       where: { status: Status.ACTIVE },
     });
     if (!foundAward) {
-      throw new NotFoundException('award does not exists');
+      throw new NotFoundException("award does not exists");
     }
     foundAward.name = award.name;
     foundAward.description = award.description;
@@ -71,7 +74,7 @@ export class AwardService {
       where: { status: Status.ACTIVE },
     });
     if (!awardExists) {
-      throw new BadRequestException('id must be sent');
+      throw new BadRequestException("id must be sent");
     }
     await this._awardRepository.update(id, { status: Status.INACTIVE });
   }
