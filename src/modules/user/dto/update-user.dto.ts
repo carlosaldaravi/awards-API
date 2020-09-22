@@ -1,4 +1,4 @@
-import { IsString } from "class-validator";
+import { IsDate, IsString } from "class-validator";
 import { Team } from "../../../shared/team.enum";
 
 export class UpdateUserDto {
@@ -11,6 +11,6 @@ export class UpdateUserDto {
   @IsString()
   team: Team;
 
-  @IsString()
+  @IsDate()
   dateborn: Date;
 }
