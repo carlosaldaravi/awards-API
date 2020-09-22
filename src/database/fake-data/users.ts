@@ -1,6 +1,7 @@
 export const users_DB_DATA = [
   {
     username: "jparken0",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Jarrod",
     lastname: "Parken",
     email: "jparken0@unicef.org",
@@ -10,6 +11,7 @@ export const users_DB_DATA = [
   },
   {
     username: "sfilgate1",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Spike",
     lastname: "Filgate",
     email: "sfilgate1@ebay.com",
@@ -19,6 +21,7 @@ export const users_DB_DATA = [
   },
   {
     username: "imorrant2",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Ingram",
     lastname: "Morrant",
     email: "imorrant2@fda.gov",
@@ -28,6 +31,7 @@ export const users_DB_DATA = [
   },
   {
     username: "ldugald3",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Lotte",
     lastname: "Dugald",
     email: "ldugald3@state.tx.us",
@@ -37,6 +41,7 @@ export const users_DB_DATA = [
   },
   {
     username: "psumshon4",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Pietro",
     lastname: "Sumshon",
     email: "psumshon4@behance.net",
@@ -46,6 +51,7 @@ export const users_DB_DATA = [
   },
   {
     username: "alarrie5",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Adore",
     lastname: "Larrie",
     email: "alarrie5@jigsy.com",
@@ -55,6 +61,7 @@ export const users_DB_DATA = [
   },
   {
     username: "fpena6",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Fonz",
     lastname: "Pena",
     email: "fpena6@google.ca",
@@ -64,6 +71,7 @@ export const users_DB_DATA = [
   },
   {
     username: "bschild7",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Brit",
     lastname: "Schild",
     email: "bschild7@mail.ru",
@@ -73,6 +81,7 @@ export const users_DB_DATA = [
   },
   {
     username: "ttowson8",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Tab",
     lastname: "Towson",
     email: "ttowson8@un.org",
@@ -82,6 +91,7 @@ export const users_DB_DATA = [
   },
   {
     username: "hdockwra9",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Henderson",
     lastname: "Dockwra",
     email: "hdockwra9@livejournal.com",
@@ -91,6 +101,7 @@ export const users_DB_DATA = [
   },
   {
     username: "lbudgea",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Livvyy",
     lastname: "Budge",
     email: "lbudgea@zimbio.com",
@@ -100,6 +111,7 @@ export const users_DB_DATA = [
   },
   {
     username: "prickcordb",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Parker",
     lastname: "Rickcord",
     email: "prickcordb@dropbox.com",
@@ -109,6 +121,7 @@ export const users_DB_DATA = [
   },
   {
     username: "epriddingc",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Esme",
     lastname: "Pridding",
     email: "epriddingc@tinyurl.com",
@@ -118,6 +131,7 @@ export const users_DB_DATA = [
   },
   {
     username: "edaintreed",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Emlynne",
     lastname: "Daintree",
     email: "edaintreed@utexas.edu",
@@ -127,6 +141,7 @@ export const users_DB_DATA = [
   },
   {
     username: "askirvene",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Abeu",
     lastname: "Skirven",
     email: "askirvene@unblog.fr",
@@ -136,6 +151,7 @@ export const users_DB_DATA = [
   },
   {
     username: "cwhaleyf",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Chadwick",
     lastname: "Whaley",
     email: "cwhaleyf@latimes.com",
@@ -145,6 +161,7 @@ export const users_DB_DATA = [
   },
   {
     username: "nscramageg",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Nelli",
     lastname: "Scramage",
     email: "nscramageg@spotify.com",
@@ -154,6 +171,7 @@ export const users_DB_DATA = [
   },
   {
     username: "lstopsh",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Laney",
     lastname: "Stops",
     email: "lstopsh@mtv.com",
@@ -163,6 +181,7 @@ export const users_DB_DATA = [
   },
   {
     username: "lludli",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Ludovico",
     lastname: "Ludl",
     email: "lludli@google.cn",
@@ -172,6 +191,7 @@ export const users_DB_DATA = [
   },
   {
     username: "mkingj",
+    password: "$2a$10$bcanqLFep8/3LSRKLSvJLOPngAIura0K613fknXnT/g3WpwvJy286",
     firstname: "Michaella",
     lastname: "King",
     email: "mkingj@newyorker.com",

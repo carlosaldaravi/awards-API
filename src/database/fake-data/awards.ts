@@ -1,4 +1,4 @@
-export const teams_DB_DATA = [
+export const awards_DB_DATA = [
   {
     name: "A tope",
     description: "Asiste una semana completa",
@@ -358,14 +358,6 @@ export const teams_DB_DATA = [
     type: "FÍSICO",
     subtype: "FUERZA AÉREA",
     order: 4,
-  },
-  {
-    name: "La montaña",
-    description: "Realiza 15 dominadas estrictas",
-    points: 1,
-    type: "FÍSICO",
-    subtype: "FUERZA AÉREA",
-    order: 5,
   },
   {
     name: "La montaña",
