@@ -36,3 +36,4 @@ lerna-debug.log*
 # Config
 orm.config.json
 .env
+.DS_Store
