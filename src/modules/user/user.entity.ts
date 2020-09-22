@@ -20,7 +20,7 @@ export class User extends BaseEntity {
   @Column({ type: "varchar", unique: true, length: 20, nullable: false })
   username: string;
 
-  @Column({ type: "varchar", nullable: false })
+  @Column({ type: "varchar", unique: true, nullable: false })
   email: string;
 
   @Column({ type: "varchar", nullable: false })
@@ -34,6 +34,9 @@ export class User extends BaseEntity {
 
   @Column({ type: "varchar", length: 20, nullable: true })
   team: string;
+
+  @Column({ type: "varchar", length: 50, nullable: true })
+  avatar: string;
 
   @Column({ type: "timestamp", name: "date_born", nullable: true })
   dateborn: Date;
