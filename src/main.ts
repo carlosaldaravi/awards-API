@@ -8,6 +8,9 @@ async function bootstrap() {
 
   setDefaultValues();
 
+  // CORS Config
+  app.enableCors();
+
   await app.listen(AppModule.port);
   console.log("Corriendo en el puerto ", AppModule.port);
 }
